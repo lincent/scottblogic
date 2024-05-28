@@ -1,6 +1,6 @@
 ---
 title: Move over GraphCast
-date: 2024-05-30 00:00:00 Z
+date: 2024-05-28 00:00:00 Z
 categories:
 - Tech
 tags:
@@ -68,7 +68,11 @@ In the ECMWF’s latest update, they announced they have teamed up with MET Norw
 
 The collaboration looked at integrating Neural-LAM with AIFS to allow high-resolution data within the global model. This method maintains global coverage while enhancing local accuracy, allowing seamless interaction between global and regional weather systems.
 
+![GNN mesh over resolutions](../lvincent/assets/graphcast2/ecmwf-aifs-mesh.jpg) <center>_Image showing how high the GNN handles change in resolution (ECMWF)_</center>
+
 The project has shown promising results, with models generating higher-resolution forecasts in target areas. Future work will optimize the model structure and increase resolution to 2.5 km for the local areas.
+
+![GIF forecast example](../lvincent/assets/graphcast2/ecmwf-aifs-dual-res.gif) <center>_Animation of AIFS forecast with increased resolution over Nordic Region. (ECMWF)_</center>
 
 The ECMWF are creating a new framework, called Anemoi, built on top of PyTorch, to facilitate the creation of data-driven weather models at both regional and global scales. This open-source tool will allow meteorological services to train their own models using customized datasets and configurations.
 
